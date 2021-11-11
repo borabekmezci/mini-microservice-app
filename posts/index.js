@@ -1,9 +1,10 @@
 const express = require("express");
 const { randomBytes } = require ("crypto");// this makes new id for Post request that users trying to generate.
+const cors = require("cors");
 
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 
 const posts = {};
 
