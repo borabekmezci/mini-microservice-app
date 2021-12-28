@@ -12,7 +12,7 @@ app.post("/events",async (req,res)=>{
 
         await axios.post("http://localhost:4005/events",{
             type : 'CommentModerated',
-            data : {//we created this data of CommentModerated-event=>CommentCreated-event in comments/index.js
+            data : {//we created this data of CommentModerated-event like CommentCreated-event in comments/index.js
                 id : data.id,
                 postId : data.postId,
                 status,
